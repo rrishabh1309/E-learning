@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import "./App.css";
 
 function Courses() {
   const [showOptions, setShowOptions] = useState(false);

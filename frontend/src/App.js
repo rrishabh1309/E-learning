@@ -15,7 +15,6 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/user" element={<Dashboard />} />
         <Route path="/courses" element={<Courses />} />
-        {/* Add fallback route for 404 */}
         <Route path="*" element={<div className="not-found">404 - Page Not Found</div>} />
       </Routes>
     </Router>

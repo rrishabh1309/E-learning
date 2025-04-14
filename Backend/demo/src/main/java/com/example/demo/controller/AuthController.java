@@ -22,7 +22,7 @@ public class AuthController {
         }
 
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-        user.setPassword(encoder.encode(user.getPassword())); // 🔒 hash before saving
+        user.setPassword(encoder.encode(user.getPassword()));
 
         userRepo.save(user);
         return ResponseEntity.ok("Register successfully!");
